@@ -138,4 +138,3 @@ function theme_slug_show_social_icons() {
          echo "</ul>";
      }
 }
-?>
