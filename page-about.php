@@ -19,11 +19,12 @@ Template Name: About Template
 
 <?php get_header(); ?>
    
-<div class="container">
+<div class="container-fluid">
      <?php get_template_part( 'template-parts/_hero' ); ?>
      
      <div class="row table1">
-         
+        <?php get_template_part( 'template-parts/_block_right_1' ); ?> 
+        <?php get_template_part( 'template-parts/_block_left_2' ); ?> 
     </div>
      
      <div class="row table1">

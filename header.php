@@ -39,11 +39,14 @@
 
 
 	<header id="site-header">
-		<div class="wrapper container header">
+    <div class="container-fluid" style="background:#512437">
+	    
+	
+		<div class="container header">
 		    <div class="row head">
                <div class="col-md-12 text-right menu-small">
                    <div class="menu-s">  
-                       <span>Call 0207 247 7824</span>
+                       <a href="tel:+555-555-5555">Call 0207 247 7824</a>
                        <span>Book Table</span>  
                    </div>
                 </div>
@@ -88,7 +91,7 @@
                                 'container'       => '',
                                 'container_class' => '',
                                 'container_id'    => '',
-                                'menu_class'      => 'smartmenu list-inline text-right',
+                                'menu_class'      => 'smartmenu list-inline text-right header-nav',
                                 'menu_id'         => '',
                                 'echo'            => true,
                                 'fallback_cb'     => '',
@@ -106,5 +109,6 @@
                 </div>
            </div>
 		</div><!-- /.container header -->
+		</div>
 	</header><!-- /#site-header -->
 

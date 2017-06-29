@@ -177,24 +177,131 @@ header ul{
     margin: 15px 0;
     
 }
-.menu-small{
-    color: #fff;
-    font-size:16px; 
-}
+
 .menu-s{
     position: absolute;
     right:20px;
-    top:5px;
-}
-nav{
-    margin-top: 40px;
-}
-header nav li a{
-    color:#fff;
-    padding-left;
-    font-size: 16px;
+    top:12px;
+    color: #fff;
+    font-size:16px; 
 }
 
+/* NAVIGATION */
+nav{
+    padding-top: 40px;
+    background: none;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 5px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #555;
+}
+
+nav ul li a {
+  position:relative;
+  z-index: 1;
+}
+nav ul li a:hover {
+  color: #212121;
+  text-decoration: none;
+}
+nav ul li a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: #fff;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+  border-radius: 3px;
+}
+nav ul li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
+
+.current-menu-item a{
+    border-bottom: 2px solid black;
+}
+/* Keyframes */
+@-webkit-keyframes fill {
+  0% {
+    width: 0%;
+    height: 1px;
+  }
+  50% {
+    width: 100%;
+    height: 1px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: #333;
+  }
+}
+
+/* Keyframes */
+@-webkit-keyframes circle {
+  0% {
+    width: 1px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: 1px;
+    z-index: -1;
+    background: #eee;
+    border-radius: 100%;
+  }
+  100% {
+    background: #aaa;
+    height: 5000%;
+    width: 5000%;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 0;
+  }
+}
+
+
+.header-nav a:hover{
+    
+}
 .dis-table{
    
     display: table;
@@ -233,13 +340,17 @@ header nav li a{
     padding: 0 15px;
 }
 /* new left-menu-1 & right-menu-1*/ 
-.l-m-1{
+    .l-m-1{
         color:#fff;
         background: #212121;
-        padding:70px 20px 60px;
+        padding:50px 20px 40px;
+    }
+    .l-m-1 h4{
+        padding: 10px 0;
+        margin:0 !important;
     }
     .l-m-1 #left-1-div{
-        padding: 50px 0 20px;
+        padding: 20px 0 20px;
     }
     .l-m-1 #left-2-div{
         padding: 20px 0 20px;
@@ -248,20 +359,30 @@ header nav li a{
         margin: 0;
     }
     #cobra1{
-        
-        width:30%;
+        padding-top: 10px;
+       width:30%;
     }
     #curry1{
-        
+        padding-top: 10px;
         width:30%;
 
     }
+@media (min-width: 1400px) {
+    #cobra1{
+            padding-top: 10px;
+            max-width: 20%;
+        }
+        #curry1{
+            padding-top: 10px;
+            max-width: 20%;
+        }
+}
   .r-m-1{
         background: #fff;
-        padding:70px 20px 50px;
+        padding:50px 20px 30px;
     }
     .r-m-1 #right-1-div{
-        padding: 60px 0 15px;
+        padding: 50px 0 15px;
     }
     .r-m-1 #right-2-div{
         padding: 15px 0 15px;
@@ -275,21 +396,25 @@ header nav li a{
         display: inline-block;
         color:#000;
         font-weight: 500;}
-    .r-m-1 p {
-        max-width: 330px;
-        display: block;
-        margin: 0 auto;
-
-    }
-    .r-m-1 p.p{
+  
+    .r-m-1 .p{
         margin: 0px auto;
         padding-bottom: 40px;
+        max-width: 330px;
+        display: block;
+        font-weight: 300;
     } 
-    .r-m-1 p.p1{
+
+p{
+    text-align: center;
+}
+
+ /*   .r-m-1 p.p1{
         font-weight: 500;
 
-    }
+    } */
 
+/*
 .left-menu-1{
     color:#fff;
     background: #212121;
@@ -297,6 +422,7 @@ header nav li a{
 .left-menu-1 h4{
     margin: 70px 0 50px;
 }
+*/
 #cobra{
     margin: 20px 0 40px;
     width:30%;
@@ -306,11 +432,13 @@ header nav li a{
     width:30%;
     
 }
+
 .ligther{
     font-weight: 200;
     font-size:11px;
 }
 
+/*
 .right-menu-1{
     background: #fff;
     
@@ -342,6 +470,7 @@ header nav li a{
     font-weight: 500;
     
 }
+*/
 
 @media (min-width: 650px) {
     .table1{
@@ -355,8 +484,7 @@ header nav li a{
         float: none;
         width: 50%;
     }
-    
-
+        
 }
 
 .cf:before, .cf:after{
@@ -370,26 +498,31 @@ header nav li a{
 .left-menu-2{
     background: #512437;
     color:#fff;
+    padding: 30px 0 30px;
 }
 .left-menu-2 img{
-    margin-top: 30px;
+    
     width: 100%;
     max-width: 100%;  
-    
+    background-repeat: no-repeat;
+    background-size: cover; 
 }
-.left-menu-2 p.p{
-    margin: 15% auto 10%;
-}
-.left-menu-2 p{
+
+.left-menu-2 .p{
     max-width:370px;
     display: block;
     margin: 0 auto;
+    font-weight: 300;
+    padding: 45px 0 17px;
 }
+/*
 .left-menu-2 p.p1{
     font-weight: 500;
+     padding-top:17px;
 }
+*/
 .left-menu-2 .menu-a{
-    margin:50px 0 80px;
+    padding:50px 0 50px;
 }
 .left-menu-2 .menu-a a{
     text-decoration: none;
@@ -402,6 +535,8 @@ header nav li a{
 .left-menu-2 .menu-a .a1{
     padding: 5px 50px;
 }
+
+
 .right-menu-2 {
     background-repeat: no-repeat;
     background-size: cover; 
@@ -420,13 +555,15 @@ header nav li a{
 }
 .reviews p{
     max-width: 40%;
-    margin: 0 auto;
-    font-weight: 600;
+    margin: 0 auto !important;
+    font-weight: 400;
 }
+/*
 .reviews p span{
     font-weight: 400;
     
 }
+*/
 .reviews #circles{
     width:4%;
 }
@@ -438,6 +575,8 @@ header nav li a{
 
 .video{
     background: #212121;
+    width:700px;
+    height: 500px;
 }
 
 .book{
@@ -506,10 +645,10 @@ header nav li a{
     .table1 > div {
         width: 100%;
     }
-    .right-menu-1 p.p1{
+  /*  .r-m-1 p.p1{
     font-weight: 500;
     margin-bottom: 30px;
-    }
+    } */
     .video iframe{
         width: 90%;
     }
@@ -518,14 +657,20 @@ header nav li a{
     background-size: cover; 
     height: 30em !important;
 }
-
 }
+    @media (min-width: 300px) and(max-width: 650px){
+        .right-menu-2 {
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 30em !important;
+    }
+
 @media (min-width: 650px) and (max-width: 700px) {
-    .left-menu-2 .menu-a a{
+    .l-m-2 .menu-a a{
         display: block;
         margin:5px;
     }
-    .right-menu-2 {
+    .r-m-2 {
     background-repeat: no-repeat;
     background-size: cover; 
 }

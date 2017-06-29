@@ -16,16 +16,20 @@ Template Name: Home Template
 	} 
 
 ?>
-
+<?php
+    $video_1 = get_field('video_1');
+    
+?>
 <?php get_header(); ?>
+<div class="container-fluid">
 
-<div class="container">
      <?php get_template_part( 'template-parts/_hero' ); ?>
      
      <div class="row table1">
          <?php get_template_part( 'template-parts/_block_left_1' ); ?>
          <?php get_template_part( 'template-parts/_block_right_1' ); ?>
     </div>
+
      
      <div class="row table1">
          <?php get_template_part( 'template-parts/_block_left_2' ); ?>
@@ -33,12 +37,19 @@ Template Name: Home Template
     </div>
      
      
-     
-    <div class="row">
+     <?php if(!empty($video_1)) { ?> 
+    <div class="row" id="video-row">
         <div class="col-md-12 text-center video">
-            <iframe width="70%" height="350" src="<?php the_field('video_1') ?>" frameborder="0" allowfullscreen></iframe>
+            <?php the_field('video_1') ?> 
         </div>
     </div>
+    <?php } 
+    else { ?>
+        <style type="text/css">.video, #video-row{
+        display:none;
+        }</style>
+        <?php } ?>
+    
     
     <div class="row">
         <div class="col-md-12 text-center reviews cf">
@@ -56,4 +67,8 @@ Template Name: Home Template
 </div>
 
 
+
 <?php get_footer(); ?>
+
+
+ 
