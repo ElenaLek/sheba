@@ -1,7 +1,7 @@
 /*
 	Theme Name: sheba
 	Theme URI: https://makeagency.co.uk
-	Author: ELena
+	Author: ELena Lekka
 	Author URI: http://www.wptricks.co.uk/
 	Description: 
 	Version: 2.0
@@ -156,39 +156,49 @@ h3 {
   font-size: 1.125em; }
 
 /*# sourceMappingURL=style.css.map */
-/* my css */
+
+/* MY CSS */
 body{
     margin: 0;
     font-family: Quicksand; 
     font-size:14px;
 }
 
+/* *****HEADER***** */
 .header{
     background: #512437;
     font-weight: 500; 
 }
-header ul{
-    background: #512437;
-}
-.logo{
-    background: url(/images/logo.png) no-repeat;
-   /* text-indent: -100000px; */
-    height: 81px;
-    margin: 15px 0;
-    
-}
 
 .menu-s{
-    position: absolute;
-    right:20px;
-    top:12px;
     color: #fff;
     font-size:16px; 
+    text-align: right;
+    padding: 10px 20px 0 0;
+    
+}
+.menu-s a{
+    color:#fff;
+    text-decoration: none;
+    padding: 5px;
+}
+.menu-s a:hover{
+    border-radius: 5px;
+    background: #212121;
+    text-decoration: none;
+    color: #fff;
+    
+}
+.menu-s a:last-child{
+  margin-left: 2%;
+}
+.menu-s a:first-child{
+  margin-right: 2%;
 }
 
 /* NAVIGATION */
 nav{
-    padding-top: 40px;
+    padding-top: 10px;
     background: none;
 }
 
@@ -216,7 +226,6 @@ nav ul li a:before {
 nav ul li a:hover {
   color: #555;
 }
-
 nav ul li a {
   position:relative;
   z-index: 1;
@@ -253,55 +262,12 @@ nav ul li a:hover:after {
 .current-menu-item a{
     border-bottom: 2px solid black;
 }
-/* Keyframes */
-@-webkit-keyframes fill {
-  0% {
-    width: 0%;
-    height: 1px;
-  }
-  50% {
-    width: 100%;
-    height: 1px;
-  }
-  100% {
-    width: 100%;
-    height: 100%;
-    background: #333;
-  }
-}
-
-/* Keyframes */
-@-webkit-keyframes circle {
-  0% {
-    width: 1px;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    height: 1px;
-    z-index: -1;
-    background: #eee;
-    border-radius: 100%;
-  }
-  100% {
-    background: #aaa;
-    height: 5000%;
-    width: 5000%;
-    z-index: -1;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    border-radius: 0;
-  }
-}
 
 
 .header-nav a:hover{
     
 }
+
 .dis-table{
    
     display: table;
@@ -322,6 +288,7 @@ nav ul li a:hover:after {
     width: 199px;
     margin: 0 auto; 
 }
+/* *****BANNER***** */
 .banner{
     color:#fff;
 }
@@ -334,11 +301,12 @@ nav ul li a:hover:after {
 }
 
 .padding-0{
-    padding: 0;
+    padding: 30px 0 !important;
 }
 .padding-1{
     padding: 0 15px;
 }
+
 /* new left-menu-1 & right-menu-1*/ 
     .l-m-1{
         color:#fff;
@@ -395,7 +363,8 @@ nav ul li a:hover:after {
         padding: 5px 70px;
         display: inline-block;
         color:#000;
-        font-weight: 500;}
+        font-weight: 500;
+}
   
     .r-m-1 .p{
         margin: 0px auto;
@@ -409,82 +378,9 @@ p{
     text-align: center;
 }
 
- /*   .r-m-1 p.p1{
-        font-weight: 500;
-
-    } */
-
-/*
-.left-menu-1{
-    color:#fff;
-    background: #212121;
-}
-.left-menu-1 h4{
-    margin: 70px 0 50px;
-}
-*/
-#cobra{
-    margin: 20px 0 40px;
-    width:30%;
-}
-#curry{
-    margin: 10px 0 80px 0;
-    width:30%;
-    
-}
-
 .ligther{
     font-weight: 200;
     font-size:11px;
-}
-
-/*
-.right-menu-1{
-    background: #fff;
-    
-    
-}
-.right-menu-1 a{
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 18.05px;
-    border: 2px solid #000;
-    padding: 5px 70px;
-    display: inline-block;
-    color:#000;
-    font-weight: 500;
-}
-.right-menu-1 h4{
-     margin: 70px 0 60px;
-}
-.right-menu-1 p {
-    max-width: 330px;
-    display: block;
-    margin: 0 auto;
-    
-}
-.right-menu-1 p.p{
-    margin: 30px auto 40px;
-} 
-.right-menu-1 p.p1{
-    font-weight: 500;
-    
-}
-*/
-
-@media (min-width: 650px) {
-    .table1{
-        display: table;
-        width: calc( 100% + 30PX );
-        max-width: none;
-        margin-bottom: 0px;
-    }
-    .table1> div {
-        display: table-cell;
-        float: none;
-        width: 50%;
-    }
-        
 }
 
 .cf:before, .cf:after{
@@ -495,6 +391,7 @@ p{
     clear:both;
 }
 
+/* *****LEFT MENU 2***** */
 .left-menu-2{
     background: #512437;
     color:#fff;
@@ -507,7 +404,6 @@ p{
     background-repeat: no-repeat;
     background-size: cover; 
 }
-
 .left-menu-2 .p{
     max-width:370px;
     display: block;
@@ -515,12 +411,6 @@ p{
     font-weight: 300;
     padding: 45px 0 17px;
 }
-/*
-.left-menu-2 p.p1{
-    font-weight: 500;
-     padding-top:17px;
-}
-*/
 .left-menu-2 .menu-a{
     padding:50px 0 50px;
 }
@@ -531,17 +421,20 @@ p{
     display: inline-block;
     color:#fff;
     font-weight: 500;
+    border-radius: 5px;
+    
 }
 .left-menu-2 .menu-a .a1{
     padding: 5px 50px;
 }
 
-
+/* *****RIGHT MENU 2***** */
 .right-menu-2 {
     background-repeat: no-repeat;
     background-size: cover; 
 }
 
+/* *****REVIEWS SECTION***** */
 .reviews{
     background: #fff;
 }
@@ -556,14 +449,12 @@ p{
 .reviews p{
     max-width: 40%;
     margin: 0 auto !important;
-    font-weight: 400;
+    font-weight: 600;
 }
-/*
 .reviews p span{
     font-weight: 400;
     
 }
-*/
 .reviews #circles{
     width:4%;
 }
@@ -573,37 +464,141 @@ p{
     
 }
 
+/* *****VIDEO SECTION***** */
 .video{
     background: #212121;
-    width:700px;
-    height: 500px;
+    height: 400px !important;
+   
+}
+.videoWrapper {
+	padding-top: 10px;
+	height: 0;
+}
+.videoWrapper iframe {
+	
+	width: 70%;
+	height: 370px;
+    margin: 0 auto;
+    
+}
+.centered {
+width: 170px;
+margin: 0 auto;
+text-align: center;
+padding-bottom: 20px;
 }
 
+/* *****LINKS HOVERING***** */
 .book{
     background: #512437;
     padding: 40px 0;
 }
+.r-m-1 a{
+        text-decoration: none !important;
+        text-transform: uppercase;
+        font-size: 18.05px;
+        border: 2px solid #000;
+        padding: 5px 70px;
+        display: inline-block;
+        color:#000;
+        font-weight: 500;
+        border-radius: 5px;
+}
 .book a {
     color:#fff;
     text-decoration: none;
-    border: 1px solid #fff;
+    border: 2px solid #fff;
     padding: 10px 100px; 
+    border-radius: 5px;
 }
 
+.book a:hover {
+    color:#512437;
+    background: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 10px 100px; 
+    border-radius: 5px;
+    font-weight: 600;
+    box-shadow: 0px 0px 20px #2b2c2d;
+    
+}
+.menu-a a:hover{
+    color:#512437;
+    background: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 5px 30px; 
+    border-radius: 5px;
+    font-weight: 600;
+    box-shadow: 0px 0px 20px #2b2c2d;
+}
+.r-m-1 a:hover {
+    color: #512437;
+    background: #512437;
+    text-decoration: none;
+    border: 1px solid #512437;
+    padding: 10px 100px; 
+    border-radius: 5px;
+    font-weight: 600;
+    box-shadow: 0px 0px 20px #2b2c2d;
+    
+}
+.book a, .menu-a a, .r-m-1 a,
+.book a:after, .menu-a a:after, .r-m-1 a:after,
+.book a:before, .menu-a a:before, .r-m-1 a:before {
+  transition: all .7s;
+}
+.book a:hover, .menu-a a:hover, .r-m-1 a:hover {
+  color: #555;
+}
+.book a, .menu-a a, .r-m-1 a {
+  position:relative;
+  z-index: 1;
+}
+.book a:hover, .menu-a a:hover {
+  color: #212121;
+  text-decoration: none;
+}
+.r-m-1 a:hover{
+    color:#512437;
+    text-decoration: none;
+}
+.book a:after, .menu-a a:after, .r-m-1 a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: #fff;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+  border-radius: 3px;
+}
+.book a:hover:after, .menu-a a:hover:after, .r-m-1 a:after{
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
+/* *****FOOTER***** */
 .footer{
     background: #212121;
     color: #fff;
 }
 .footer-left {
-    margin-left: 40px;
+    padding-left: 20px;
 }
 .footer ul, .footer ul a{
     color:#fff;
 }
-.footer-left li{
-    margin-bottom: 10px;
-}
-
 .footer-left li:first-child{
     font-weight: 500;  
     margin-top: 50px;
@@ -612,11 +607,13 @@ p{
     width:30px;
     margin-right:15px;
 }
-.footer-left li:last-child{
-    margin-bottom: 40px;
-}
+ .footer-left a img{
+        padding: 5px 0;
+        
+    }
+
 .footer-right h5{
-    margin-top: 50px;
+    padding-top: 50px;
 }
 .footer h5{
     font-weight: 200;
@@ -625,17 +622,56 @@ p{
     width:60px;
 }
 
-@media (max-width: 770px){
-    .footer-left.text-left{
-        margin:0 auto;
+
+@media (min-width: 650px) and (max-width: 767px) {
+    .l-m-2 .menu-a a{
+        display: block;
+        margin:5px;
+    }
+    .r-m-2 {
+    background-repeat: no-repeat;
+    background-size: cover; 
+    }
+   
+    .footer-left li{
+        padding: 0 20px;
         text-align: center;
     }
- 
+    .footer-right{
+        padding-bottom:40px;
+    }
+    .footer-right h5 {
+        padding-top: 20px;
+    }
     .footer-right h5, .footer-right ul{
         text-align: center;
     }
+     .menu-s {
+        display: none;
+    }
 }
-@media (max-width: 650px) {
+@media (max-width: 651px){
+    .right-menu-2 {
+        background-repeat: no-repeat;
+        background-size: cover; 
+        height: 30em !important;
+        }
+   
+
+   .footer-left {
+        padding: 0 20px;
+        text-align: center !important;
+    }
+    .footer-right{
+        padding-bottom:40px;
+    }
+    .footer-right h5 {
+        padding-top: 20px;
+    }
+    .footer-right, .footer-right ul{
+        text-align: center;
+    }
+
     .table1{
         display: table;
         width: calc( 100% + 30PX );
@@ -645,32 +681,34 @@ p{
     .table1 > div {
         width: 100%;
     }
-  /*  .r-m-1 p.p1{
-    font-weight: 500;
-    margin-bottom: 30px;
-    } */
+ 
     .video iframe{
         width: 90%;
     }
-    .right-menu-2 {
-    background-repeat: no-repeat;
-    background-size: cover; 
-    height: 30em !important;
-}
-}
-    @media (min-width: 300px) and(max-width: 650px){
-        .right-menu-2 {
-    background-repeat: no-repeat;
-    background-size: cover; 
-    height: 30em !important;
+  
+     .menu-s {
+        display: none;
     }
-
-@media (min-width: 650px) and (max-width: 700px) {
-    .l-m-2 .menu-a a{
-        display: block;
-        margin:5px;
+}
+@media (min-width: 651px) {
+    .table1{
+        display: table;
+        width: calc( 100% + 30PX );
+        max-width: none;
+        margin-bottom: 0px;
     }
-    .r-m-2 {
-    background-repeat: no-repeat;
-    background-size: cover; 
+    .table1> div {
+        display: table-cell;
+        float: none;
+        width: 50%;
+    }
+        
+}
+@media (max-width: 1000px) {
+    .menu-s {
+        display: none;
+    }
+    .hamburger{
+        display: inline-block;
+    }
 }

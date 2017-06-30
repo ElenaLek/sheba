@@ -43,18 +43,10 @@
 	    
 	
 		<div class="container header">
-		    <div class="row head">
-               <div class="col-md-12 text-right menu-small">
-                   <div class="menu-s">  
-                       <a href="tel:+555-555-5555">Call 0207 247 7824</a>
-                       <span>Book Table</span>  
-                   </div>
-                </div>
-           </div>
            
            <div class="row">
                <div class="col-md-3">
-                    <h2 class="site-logo logo">
+                    <h2 class="site-logo">
                         <?php
                             // Display the Custom Logo
                             the_custom_logo();
@@ -64,7 +56,13 @@
                     </h2>
                </div>
             
-               <div class="col-md-9">   
+               <div class="col-md-9"> 
+                   
+                    <div class="menu-s">  
+                       <a href="tel:(0044)0207 247 7824">Call 0207 247 7824</a>
+                       <a href="">Book Table</a>  
+                   </div>
+                         
                     <nav>
                     <?php 
                     /**

@@ -39,8 +39,11 @@ Template Name: Home Template
      
      <?php if(!empty($video_1)) { ?> 
     <div class="row" id="video-row">
-        <div class="col-md-12 text-center video">
-            <?php the_field('video_1') ?> 
+        <div class="col-md-12 embed-container text-center video">
+            <div class="videoWrapper">
+                <?php the_field('video_1') ?> 
+            </div>
+            
         </div>
     </div>
     <?php } 
@@ -49,16 +52,12 @@ Template Name: Home Template
         display:none;
         }</style>
         <?php } ?>
-    
-    
+<div class="row">
+    <?php echo do_shortcode('[enjoyinstagram_mb]'); ?>
+</div>
+
     <div class="row">
-        <div class="col-md-12 text-center reviews cf">
-            <h4>Reviews</h4>
-            <hr/>
-            <p>“Good food, Good service, good selection of drinks the waiters really took care of us. We will for sure return to Sheba if we come back to Brick Lane.” <span>Marco L.</span>  </p>
-            <img class="img-responsive" id="circles" src="images/circles.png" alt="">
-            <img class="img-responsive" src="images/tripadvisor.png" alt="">
-        </div>
+        <?php get_template_part( 'template-parts/_reviews' ); ?>
     </div>  
 
     <?php get_template_part( 'template-parts/_book' ); ?>

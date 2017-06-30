@@ -34,13 +34,7 @@ Template Name: Menu Template
      </div>
 
     <div class="row">
-        <div class="col-md-12 text-center reviews cf">
-            <h4>Reviews</h4>
-            <hr/>
-            <p>“Good food, Good service, good selection of drinks the waiters really took care of us. We will for sure return to Sheba if we come back to Brick Lane.” <span>Marco L.</span>  </p>
-            <img class="img-responsive" id="circles" src="images/circles.png" alt="">
-            <img class="img-responsive" src="images/tripadvisor.png" alt="">
-        </div>
+        <?php get_template_part( 'template-parts/_reviews' ); ?>
     </div>  
 
     <?php get_template_part( 'template-parts/_book' ); ?>
