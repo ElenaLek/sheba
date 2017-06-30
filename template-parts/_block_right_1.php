@@ -9,7 +9,7 @@
 
 <div class="col-md-6 text-center r-m-1 cf" style="background:<?php the_field('colour_picker_2') ?>; color:<?php the_field('colour_font_2') ?>">
 
-   <?php if(!empty($text_5)) { ?>
+   <?php if( !empty($text_5) ) { ?>
         <h4 id="h4_2-display"><?php the_field('text_5') ?></h4>
     <?php } 
     else { ?>

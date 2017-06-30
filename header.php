@@ -37,6 +37,13 @@
 	</head>
 	<body <?php  $classes[] = ''; body_class($classes); ?> id="top">
 
+    <?php
+    
+    $header_link_1 = get_field('header_link_1');
+    $header_text_1 =  get_field('header_text_1');
+    $book_table_1 = get_field('book_table_1');
+    $book_table_link_1 =  get_field('book_table_link_1');
+    ?>
 
 	<header id="site-header">
     <div class="container-fluid" style="background:#512437">
@@ -59,9 +66,16 @@
                <div class="col-md-9"> 
                    
                     <div class="menu-s">  
-                       <a href="tel:(0044)0207 247 7824">Call 0207 247 7824</a>
-                       <a href="">Book Table</a>  
-                   </div>
+                      
+                       
+                           <a href="<?php the_field('header_link_1','option') ?>"><?php the_field('header_text_1','option') ?></a>
+                        
+                           <a href="<?php the_field('book_table_link_1','option') ?>"><?php the_field('book_table_1','option') ?></a>  
+                       
+                        
+                    </div>
+                     
+                     
                          
                     <nav>
                     <?php 

@@ -427,7 +427,7 @@
 }
 
 .hamburger {
-    bottom: 20px;
+    bottom: 50px;
     cursor: pointer;
     display: none;
     height: 20px;
@@ -438,7 +438,7 @@
     width: 25px;
 }
 .hamburger span {
-    background: #f9690e none repeat scroll 0 0;
+    background: #fff none repeat scroll 0 0;
     display: block;
     height: 4px;
     opacity: 1;
@@ -502,7 +502,7 @@
     display: none;
   }
   .smartmenu.visible a {
-    color: #fff;
+    color: #000;
   }
   .smartmenu.visible {
     display: block;
@@ -511,6 +511,7 @@
     top: 100%;
     background: #263750;
     z-index: 99;
+    width: 100%;
   }
   .hamburger {
     display: inline-block;

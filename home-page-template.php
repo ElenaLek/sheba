@@ -16,11 +16,13 @@ Template Name: Home Template
 	} 
 
 ?>
+
+<?php get_header(); ?>
+
 <?php
     $video_1 = get_field('video_1');
     
 ?>
-<?php get_header(); ?>
 <div class="container-fluid">
 
      <?php get_template_part( 'template-parts/_hero' ); ?>
@@ -36,7 +38,7 @@ Template Name: Home Template
          <?php get_template_part( 'template-parts/_block_right_2' ); ?>
     </div>
      
-     
+
      <?php if(!empty($video_1)) { ?> 
     <div class="row" id="video-row">
         <div class="col-md-12 embed-container text-center video">
@@ -52,16 +54,14 @@ Template Name: Home Template
         display:none;
         }</style>
         <?php } ?>
-<div class="row">
-    <?php echo do_shortcode('[enjoyinstagram_mb]'); ?>
-</div>
 
     <div class="row">
         <?php get_template_part( 'template-parts/_reviews' ); ?>
     </div>  
 
+   <div class="row">
     <?php get_template_part( 'template-parts/_book' ); ?>
-      
+   </div>  
 
 </div>
 

@@ -14,9 +14,10 @@
 	});
 
 	// Activate the menu when the hamburger is clicked
-	$('.hamburger').on('click', function(){
+	$('.hamburger').unbind('click').on('click', function(){
 		$(this).toggleClass('open');
 		$('.smartmenu').toggleClass('visible');
+        console.log('clicked');
 	});
 
 	// Remove the .visible class on navigation if window resized from mobile navigation

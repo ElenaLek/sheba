@@ -33,15 +33,11 @@
                                 <li><a href="<?php the_field('text_link_1_footer','option') ?>"><h5><?php the_field('button_text_1_footer','option') ?></h5></a></li>
                             </ul>
                       </div>
-                      <div class="col-xs-12 col-sm-4 col-md-4 footer-right">
-                          <h5>follow us on Instagram</h5>
+                      <div class="col-xs-4 col-sm-4 col-md-4 footer-right">
+                          <h4>follow us on Instagram</h4>
                           
-                          <ul class="list-inline ">
-                              <li><a href=""><img src="<?php echo(get_template_directory_uri()); ?>/images/insta-photo.png" alt=""></a></li>
-                              <li><a href=""><img src="<?php echo(get_template_directory_uri()); ?>/images/insta-photo.png" alt=""></a></li>
-                              <li><a href=""><img src="<?php echo(get_template_directory_uri()); ?>/images/insta-photo.png" alt=""></a></li>
-                          </ul>
-                         
+                          <?php echo do_shortcode('[enjoyinstagram_mb_grid]'); ?>
+                          
                       </div>
                   </div>
               </div>
@@ -53,3 +49,4 @@
 
 	</body>
 </html>
+

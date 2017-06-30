@@ -5,6 +5,7 @@
     $text_3 = get_field('text_3');
     $text_4 = get_field('text_4');
     $image_2 =  get_field('image_2');
+    $colour_font_1 =  get_field('colour_font_1');
 ?>
    
 

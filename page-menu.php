@@ -24,10 +24,11 @@ Template Name: Menu Template
      
      <div class="row table1">
          <?php get_template_part( 'template-parts/_block_left_1' ); ?>
+         <?php get_template_part( 'template-parts/_menu_row2' ); ?>
          
     </div>
     
-     <div class="row table1" >
+     <div class="row table1 table1fix" >
          <?php get_template_part( 'template-parts/_block_right_2' ); ?>
          <div class="col-md-6 right-menu-2 padding-0 cf" style="background-image:url('<?php the_field('image_5') ?>');height:39em">
         </div>
@@ -37,7 +38,9 @@ Template Name: Menu Template
         <?php get_template_part( 'template-parts/_reviews' ); ?>
     </div>  
 
+    <div class="row">
     <?php get_template_part( 'template-parts/_book' ); ?>
+   </div> 
       
 
 </div>

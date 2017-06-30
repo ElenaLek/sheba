@@ -36,7 +36,9 @@ Template Name: About Template
        <?php get_template_part( 'template-parts/_reviews' ); ?>
     </div>  
 
+    <div class="row">
     <?php get_template_part( 'template-parts/_book' ); ?>
+   </div> 
       
 
 </div>
