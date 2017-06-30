@@ -1,0 +1,145 @@
+********************************************************************************
+* DUPLICATOR-LITE: INSTALL-LOG
+* VERSION: 1.2.8
+* STEP-1 START @ 07:42:51
+* NOTICE: Do NOT post this data to public sites or forums
+********************************************************************************
+PHP VERSION:	7.1.6 | SAPI: apache2handler
+PHP TIME LIMIT:	[0] time limit restriction disabled
+PHP MEMORY:	2048M | SUHOSIN: disabled
+SERVER:		Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.6
+DOC ROOT:	C:/xampp/htdocs/wordpress/sheba-master/DATABASE
+DOC ROOT 755:	true
+LOG FILE 644:	false
+REQUEST URL:	http://127.0.0.1/wordpress/sheba-master/DATABASE/installer.php
+--------------------------------------
+ARCHIVE EXTRACTION
+--------------------------------------
+NAME:	20170629_dc88248ece9663621649170629164930_archive.zip
+SIZE:	41.34MB
+ZIP:	Enabled (ZipArchive Support)
+
+** PACKAGE EXTRACTION IS IN MANUAL MODE ** 
+
+
+WEB SERVER CONFIGURATION FILE RESET:
+- Backup of .htaccess/web.config made to *.170629194251.orig
+- Reset of .htaccess/web.config files
+
+STEP-1 COMPLETE @ 07:42:51 - RUNTIME: 0.0086 sec.
+
+
+********************************************************************************
+* DUPLICATOR-LITE: INSTALL-LOG
+* STEP-2 START @ 07:43:17
+* NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+--------------------------------------
+DATABASE ENVIRONMENT
+--------------------------------------
+MYSQL VERSION:	This Server: 10.1.24 -- Build Server: 5.6.35
+FILE SIZE:	database.sql (1.02MB) - installer-data.sql (1.02MB)
+TIMEOUT:	5000
+MAXPACK:	1048576
+SQLMODE:	NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+NEW SQL FILE:	[C:/xampp/htdocs/wordpress/sheba-master/DATABASE/installer-data.sql]
+--------------------------------------
+DATABASE RESULTS
+--------------------------------------
+ERRORS FOUND:	0
+TABLES DROPPED:	0
+QUERIES RAN:	4700
+
+wp_commentmeta: (0)
+wp_comments: (1)
+wp_duplicator_packages: (1)
+wp_links: (0)
+wp_options: (186)
+wp_postmeta: (4268)
+wp_posts: (190)
+wp_term_relationships: (8)
+wp_term_taxonomy: (2)
+wp_termmeta: (0)
+wp_terms: (2)
+wp_usermeta: (26)
+wp_users: (1)
+
+Removed '30' cache/transient rows
+
+CREATE/INSTALL RUNTIME: 1.1648 sec.
+STEP-2 COMPLETE @ 07:43:18 - RUNTIME: 1.1873 sec.
+
+
+********************************************************************************
+* DUPLICATOR-LITE: INSTALL-LOG
+* STEP-3 START @ 07:43:34
+* NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	latin1
+CHARSET CLIENT:	utf8
+--------------------------------------
+SERIALIZER ENGINE
+[*] scan every column
+[~] scan only text columns
+[^] no searchable columns
+--------------------------------------
+wp_commentmeta^ (0)
+wp_comments~ (1)
+wp_duplicator_packages^ (0)
+wp_links^ (0)
+wp_options~ (155)
+wp_postmeta~ (4268)
+wp_posts~ (190)
+wp_term_relationships~ (8)
+wp_term_taxonomy~ (2)
+wp_termmeta^ (0)
+wp_terms~ (2)
+wp_usermeta~ (26)
+wp_users~ (1)
+--------------------------------------
+Search1:	'http://localhost:8888/sheba' 
+Change1:	'http://127.0.0.1/wordpress/sheba-master/DATABASE' 
+Search2:	'/Users/make/Sites/sheba' 
+Change2:	'C:/xampp/htdocs/wordpress/sheba-master/DATABASE' 
+Search3:	'http:\/\/localhost:8888\/sheba' 
+Change3:	'http:\/\/127.0.0.1\/wordpress\/sheba-master\/DATABASE' 
+Search4:	'\/Users\/make\/Sites\/sheba' 
+Change4:	'C:\/xampp\/htdocs\/wordpress\/sheba-master\/DATABASE' 
+Search5:	'%2FUsers%2Fmake%2FSites%2Fsheba%2F' 
+Change5:	'C%3A%2Fxampp%2Fhtdocs%2Fwordpress%2Fsheba-master%2FDATABASE%2F' 
+Search6:	'http%3A%2F%2Flocalhost%3A8888%2Fsheba' 
+Change6:	'http%3A%2F%2F127.0.0.1%2Fwordpress%2Fsheba-master%2FDATABASE' 
+Search7:	'\Users\make\Sites\sheba' 
+Change7:	'C:/xampp/htdocs/wordpress/sheba-master/DATABASE' 
+SCANNED:	Tables:13 	|	 Rows:4653 	|	 Cells:22235 
+UPDATED:	Tables:1 	|	 Rows:197 	|	 Cells:199 
+ERRORS:		0 
+RUNTIME:	0.172600 sec
+
+====================================
+CONFIGURATION FILE UPDATES:
+====================================
+
+UPDATED WP-CONFIG: /wp-config.php' (if present)
+
+WEB SERVER CONFIGURATION FILE BASIC SETUP:
+- Preparing .htaccess file with basic setup.
+Basic .htaccess file edit complete.  If using IIS web.config this process will need to be done manually.
+
+====================================
+GENERAL UPDATES & CLEANUP:
+====================================
+
+- Created directory wp-snapshots
+- Created file wp-snapshots/index.php
+
+====================================
+NOTICES
+====================================
+
+No Notices Found
+
+
+STEP 3 COMPLETE @ 07:43:34 - RUNTIME: 0.2107 sec.
+
+
